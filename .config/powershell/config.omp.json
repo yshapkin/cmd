@@ -97,7 +97,7 @@
                     "template": " \ufc8d ",
                     "style": "diamond",
                     "leading_diamond": "\ue0b6",
-                    "type": "text"
+                    "type": "exit"
                 },
                 {
                     "foreground": "#000000",
@@ -127,14 +127,6 @@
                     "powerline_symbol": "\uE0B0",
                     "template": "\ufd31 {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}}",
                     "type": "kubectl"
-                },
-                {
-                    "background": "#2e3f61",
-                    "foreground": "#ffffff",
-                    "template": " \ue77f {{ if .Unsupported }}\uf071{{ else }}{{ .Full }}{{ end }} ",
-                    "powerline_symbol": "\uE0B0",
-                    "style": "powerline",
-                    "type": "dotnet"
                 },
                 {
                     "foreground": "#262626",
@@ -178,7 +170,7 @@
                     "style": "plain",
                     "template": "\u2570\u2500",
                     "type": "text"
-                },  
+                },
                 {
                     "foreground": "#fff",
                     "template": "\ue285",
@@ -193,15 +185,9 @@
                 },
                 {
                     "foreground": "#fff",
-                    "foreground_templates": [
-                        "{{ if gt .Code 0 }}#ef5350{{ end }}"
-                    ],
-                    "properties": {
-                        "always_enabled": true
-                    },
+                    "template": "\ue285",
                     "style": "plain",
-                    "template": "\ue285 ",
-                    "type": "exit"
+                    "type": "text"
                 }
             ]
         }
