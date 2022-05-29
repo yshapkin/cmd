@@ -3,6 +3,10 @@
 
 (@(&"C:/Users/yuryshapkin/AppData/Local/Programs/oh-my-posh/bin/oh-my-posh.exe" init pwsh --config="C:\Users\yuryshapkin\.config\powershell\M365Princess.omp.json" --print) -join "`n") | Invoke-Expression
 
+# PSReadLine
+Set-PSReadLineOption -EditMode Emacs
+Set-PSReadLineOption -BellStyle None
+Set-PSReadLineKeyHandler -Chord 'Ctrl+d' -Function DeleteChar
 Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -PredictionViewStyle ListView
 
